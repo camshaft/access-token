@@ -1,0 +1,15 @@
+{
+  "name": "access-token",
+  "repo": "CamShaft/access-token",
+  "description": "Get/format an access token",
+  "version": "0.1.0",
+  "keywords": [],
+  "dependencies": {
+    "component/cookie": "*"
+  },
+  "development": {},
+  "license": "MIT",
+  "scripts": [
+    "index.js"
+  ]
+}
