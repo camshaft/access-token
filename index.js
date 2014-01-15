@@ -3,6 +3,7 @@
  */
 
 var cookie = require('cookie');
+var throttle = require('throttle');
 
 /**
  * Set the default name
@@ -17,9 +18,9 @@ var name = '_access_token';
  * @api public
  */
 
-module.exports = exports = function() {
+module.exports = exports = throttle(function() {
   return cookie(exports.name || name);
-};
+}, 10000);
 
 /**
  * Get the access token in the form of a bearer token

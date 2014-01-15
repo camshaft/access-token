@@ -5,11 +5,13 @@
   "version": "0.1.0",
   "keywords": [],
   "dependencies": {
-    "component/cookie": "*"
+    "component/cookie": "*",
+    "component/throttle": "*"
   },
   "development": {},
   "license": "MIT",
   "scripts": [
     "index.js"
-  ]
+  ],
+  "remotes": []
 }
