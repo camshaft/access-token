@@ -18,9 +18,9 @@ var name = '_access_token';
  * @api public
  */
 
-module.exports = exports = throttle(function() {
+module.exports = exports = function() {
   return cookie(exports.name || name);
-}, 10000);
+};
 
 /**
  * Get the access token in the form of a bearer token
